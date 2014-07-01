@@ -12,12 +12,24 @@
 <body>
 
 	<div id="toggle">
-		<div id="foo">
-			<div id="box">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut ante rhoncus, porta velit a, volutpat dui. Maecenas quam eros, auctor a lorem a, vehicula varius sapien. Nulla facilisi. Donec vitae lacus nunc. Curabitur non pellentesque neque, a hendrerit lorem. Nullam at mauris non massa placerat auctor. Suspendisse eget turpis nec ante venenatis feugiat ut et eros. Aliquam condimentum ornare laoreet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam volutpat lacus magna, sit amet consequat odio blandit non.</p>
-			</div>
+		<div id="foo">toggle<span></span></div>
+		<div id="box">
+			<h1>Hi there</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut ante rhoncus, porta velit a, volutpat dui. Maecenas quam eros, auctor a lorem a, vehicula varius sapien. Nulla facilisi. Donec vitae lacus nunc. Curabitur non pellentesque neque, a hendrerit lorem. Nullam at mauris non massa placerat auctor. Suspendisse eget turpis nec ante venenatis feugiat ut et eros. Aliquam condimentum ornare laoreet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam volutpat lacus magna, sit amet consequat odio blandit non.</p>
 		</div>
 	</div>
 
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#foo').click(function() {
+		$('#foo').toggleClass('open');
+		$('#box').animate({
+			height: 'toggle',
+			opacity: 'toggle',
+			width: 'toggle'
+		}, 500);
+	});
+});
+</script>
 </body>	
 </html>

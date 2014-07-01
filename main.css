@@ -1,6 +1,10 @@
+body {
+	font-family: "Open Sans";
+}
+
 #toggle {
 	position: fixed;
-	bottom: :0;
+	bottom: 0px;
 	left: 35px;
 	width:240px;
 	margin: 0;
@@ -9,5 +13,29 @@
 #box {
 	margin: 0 auto;
 	position: relative;
-	background-color: #eee;
+	background-color: #f4f4f4;
+	padding: 0 10px;
+	display: none;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	text-align: justify;
+}
+
+#foo {
+	width: 60px;
+	overflow: hidden;
+	text-align: left;
+	cursor: pointer;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+
+#foo.open span:before{ 
+	font-family: FontAwesome;
+	content: " \f0d7";
+}
+
+#foo span:before{ 
+	font-family: FontAwesome;
+	content: " \f0d8";
 }
